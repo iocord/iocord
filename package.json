@@ -1,0 +1,32 @@
+{
+  "name": "iocord",
+  "version": "1.0.0",
+  "description": "JavaScript Data Structures and Operations! Contians Multidimensional Arrays, Tally Charts, Sorted Lists, and more!",
+  "main": "iocord.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iocord/iocord.git"
+  },
+  "keywords": [
+    "io",
+    "data",
+    "structure",
+    "table",
+    "list",
+    "sort",
+    "multidimensional",
+    "ndarray",
+    "array",
+    "chart",
+    "tally"
+  ],
+  "author": "qaxt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iocord/iocord/issues"
+  },
+  "homepage": "https://github.com/iocord/iocord#readme"
+}
