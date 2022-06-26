@@ -67,10 +67,27 @@ system.error('Uncaught CustomError at line: 47')
 system.warn('Slow network detected!')
 system.pass('Installed all dependencies!')
 
-// A Few Array Methods
-console.log(['foo', 'qux'].insert(1, 'bar', 'baz'))
-console.log([2, 1, 0].sort())
-console.log(['foo', 'bar', 'baz'].remove(['foo', 'baz']))
-console.log(['a', 'b', 'c', 'd'].has('c'))
+// New Array Methods
+console.log([].equals([])) // Empty Arrays Work
+console.log([].equals({})) // Type Checking Included
+console.log([0, 'a', [], {}].equals([0, 'a', [], {}])) // Better '===' Operator 
+console.log(['foo', 'qux'].insert(1, 'bar', 'baz')) // Index Insert
+console.log([2, 1, 0].sort()) // Shell Sort
+console.log(['foo', 'bar', 'baz'].remove(['foo', 'baz'])) // Remove Items
+console.log(['foo', 'bar', 'baz'].delete(1)) // Delete Index
+console.log(['foo', 'bar', 'baz'].delete(1, 2)) // Delete After Index
+console.log(['a', 'b', 'c', 'd'].index('c')) // Binary Search
+console.log([{ a: 'alpha', b: 'beta' }, { a: 'apple' }].match((item) => {
+  return item.a === 'apple'
+}))
 console.log([{ a: 'alpha', b: 'beta' }, { a: 'apple' }].match({ a: 'alpha' }))
+console.log([{ a: 'alpha', b: 'beta' }, { a: 'apple' }].match(['b', 'beta']))
+
+// New String Methods
+console.log('Iocord'.equals('iocord'))
+
+// New Object Methods
+console.log({}.equals({})) // Empty Objects Work
+console.log({}.equals([])) // Type Checking Included
+console.log({ x: 0, y: [] }.equals({ x: 0, y: [] })) // Better '===' Operator
 ```
